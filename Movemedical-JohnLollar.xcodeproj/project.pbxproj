@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB31DDF62916B81200102ACA /* AppointmentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31DDF52916B81200102ACA /* AppointmentDetailView.swift */; };
 		CB3DCCA229160CF200BACF83 /* Movemedical_JohnLollarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3DCCA129160CF200BACF83 /* Movemedical_JohnLollarApp.swift */; };
-		CB3DCCA429160CF200BACF83 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3DCCA329160CF200BACF83 /* ContentView.swift */; };
+		CB3DCCA429160CF200BACF83 /* AppointmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3DCCA329160CF200BACF83 /* AppointmentListView.swift */; };
 		CB3DCCA629160CF300BACF83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3DCCA529160CF300BACF83 /* Assets.xcassets */; };
 		CB3DCCA929160CF300BACF83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3DCCA829160CF300BACF83 /* Preview Assets.xcassets */; };
+		CB4DA9932919B00500039808 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4DA9922919B00500039808 /* UIApplication+Ext.swift */; };
+		CBD7005B2918972E00B6E384 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7005A2918972E00B6E384 /* Date+Ext.swift */; };
+		CBD7005D2918977F00B6E384 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7005C2918977F00B6E384 /* Appointment.swift */; };
+		CBD7005F291897AD00B6E384 /* AppointmentSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7005E291897AD00B6E384 /* AppointmentSection.swift */; };
+		CBD700612918980400B6E384 /* AppointmentDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD700602918980400B6E384 /* AppointmentDictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB31DDF52916B81200102ACA /* AppointmentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailView.swift; sourceTree = "<group>"; };
 		CB3DCC9E29160CF200BACF83 /* Movemedical-JohnLollar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movemedical-JohnLollar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3DCCA129160CF200BACF83 /* Movemedical_JohnLollarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movemedical_JohnLollarApp.swift; sourceTree = "<group>"; };
-		CB3DCCA329160CF200BACF83 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB3DCCA329160CF200BACF83 /* AppointmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentListView.swift; sourceTree = "<group>"; };
 		CB3DCCA529160CF300BACF83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB3DCCA829160CF300BACF83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB4DA9922919B00500039808 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		CBD7005A2918972E00B6E384 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		CBD7005C2918977F00B6E384 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		CBD7005E291897AD00B6E384 /* AppointmentSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentSection.swift; sourceTree = "<group>"; };
+		CBD700602918980400B6E384 /* AppointmentDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				CB3DCCA129160CF200BACF83 /* Movemedical_JohnLollarApp.swift */,
-				CB3DCCA329160CF200BACF83 /* ContentView.swift */,
-				CB3DCCA529160CF300BACF83 /* Assets.xcassets */,
+				CBD700622918A47D00B6E384 /* Models */,
+				CBD700642918A4B300B6E384 /* Views */,
+				CBD700692918D5F200B6E384 /* ViewModels */,
+				CBD700632918A49300B6E384 /* Extensions */,
 				CB3DCCA729160CF300BACF83 /* Preview Content */,
+				CB3DCCA529160CF300BACF83 /* Assets.xcassets */,
 			);
 			path = "Movemedical-JohnLollar";
 			sourceTree = "<group>";
@@ -65,6 +80,41 @@
 				CB3DCCA829160CF300BACF83 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CBD700622918A47D00B6E384 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7005C2918977F00B6E384 /* Appointment.swift */,
+				CBD7005E291897AD00B6E384 /* AppointmentSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CBD700632918A49300B6E384 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CBD7005A2918972E00B6E384 /* Date+Ext.swift */,
+				CB4DA9922919B00500039808 /* UIApplication+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CBD700642918A4B300B6E384 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB3DCCA329160CF200BACF83 /* AppointmentListView.swift */,
+				CB31DDF52916B81200102ACA /* AppointmentDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CBD700692918D5F200B6E384 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CBD700602918980400B6E384 /* AppointmentDictionary.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB3DCCA429160CF200BACF83 /* ContentView.swift in Sources */,
+				CB4DA9932919B00500039808 /* UIApplication+Ext.swift in Sources */,
+				CBD700612918980400B6E384 /* AppointmentDictionary.swift in Sources */,
+				CB3DCCA429160CF200BACF83 /* AppointmentListView.swift in Sources */,
 				CB3DCCA229160CF200BACF83 /* Movemedical_JohnLollarApp.swift in Sources */,
+				CB31DDF62916B81200102ACA /* AppointmentDetailView.swift in Sources */,
+				CBD7005F291897AD00B6E384 /* AppointmentSection.swift in Sources */,
+				CBD7005B2918972E00B6E384 /* Date+Ext.swift in Sources */,
+				CBD7005D2918977F00B6E384 /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
